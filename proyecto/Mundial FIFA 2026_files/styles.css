@@ -1,0 +1,163 @@
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #198754;
+    --dark-color: #212529;
+    --light-bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --accent-color: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--dark-color);
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 0 15px 0;
+}
+
+.section-divider {
+    border: 0;
+    height: 2px;
+    background: #e0e0e0;
+    margin: 40px auto;
+    width: 90%;
+}
+
+/* Portada */
+.main-header {
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+}
+
+.main-header h1 {
+    font-size: 3rem;
+}
+
+.badge {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.student-info {
+    background: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    margin: 15px 0;
+}
+
+/* Equipos */
+.teams-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.team-card {
+    background: var(--card-bg);
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Marcador */
+.match-board {
+    background: var(--card-bg);
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.score {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Estadísticas */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.stat-box {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.champion-box {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+
+.players-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.player-card {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.player-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+.player-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
